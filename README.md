@@ -19,4 +19,5 @@ We have to use at least one implementation from those assignments as the learnin
 
 ```
 
-### Paper
+### Papers used
+- https://www.sciencedirect.com/science/article/pii/S2772442522000090#fn3
