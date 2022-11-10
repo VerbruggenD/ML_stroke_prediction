@@ -4,3 +4,7 @@ Project for the Master's Course of Machine Learning at University Hasselt &amp; 
 ### The dataset used for this stroke prediction model can be found on skaggle:
 https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset
 
+### Collaborators:
+- https://github.com/DivadGe
+- https://github.com/VerbruggenD
+
