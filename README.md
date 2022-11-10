@@ -8,3 +8,13 @@ https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset
 - https://github.com/DivadGe
 - https://github.com/VerbruggenD
 
+### Applied functions
+The course is largely based on the old Coursera course tought by Andrew Ng, with the rewritten assignments in python.
+We have to use at least one implementation from those assignments as the learning model, this code will be denoted like this.
+
+```
+# ====================== YOUR CODE HERE =======================   
+
+# =============================================================
+
+```
