@@ -1,0 +1,6 @@
+Following steps: 
+	- rejecting outliers of the dataset (to improve the logistic regression)
+	- selecting more features (only to increase f1, should be somewhat methodologic)
+	- playing with the regularization and decision boundary params (in a for loop, all results of testing 		should be saved for the final paper)
+	- implementing SVM (also from the assignments, compare it to logistic regression)
+	- comparing results with models from SKLearn
