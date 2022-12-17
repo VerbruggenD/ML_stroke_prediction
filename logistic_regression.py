@@ -36,7 +36,7 @@ def sigmoid(z):
     return g
 
 
-def lrCostFunction(theta, X, y, lambda_):
+def lrcostFunctionReg(theta, X, y, lambda_):
     #Initialize some useful values
     m = y.size
     
@@ -61,7 +61,7 @@ def lrCostFunction(theta, X, y, lambda_):
     # =============================================================
     return J, grad
 
-def lrOptimization(lrCostFunction, initial_theta, X, y, _lambda):
+def lrOptimization(lrcostFunctionReg, initial_theta, X, y, _lambda):
     # set options for optimize.minimize
     options= {'maxiter': 500}
 
@@ -72,7 +72,7 @@ def lrOptimization(lrCostFunction, initial_theta, X, y, _lambda):
     # equivalent to MATLAB's fminunc
     # See https://stackoverflow.com/questions/18801002/fminunc-alternate-in-numpy
 
-    res = optimize.minimize(lrCostFunction,
+    res = optimize.minimize(lrcostFunctionReg,
                             initial_theta,
                             (X, y, _lambda),
                             jac=True,
@@ -89,13 +89,13 @@ def lrOptimization(lrCostFunction, initial_theta, X, y, _lambda):
     theta = res.x
 
     #theta = result[0]
-    (cost, grad) = lrCostFunction(theta, X, y, _lambda)
+    (cost, grad) = lrcostFunctionReg(theta, X, y, _lambda)
 
     # Print theta to screen
-    print('Cost at theta found by optimize.minimize: {:.3f}'.format(cost))
+    #print('Cost at theta found by optimize.minimize: {:.3f}'.format(cost))
 
-    print('theta:')
-    print('\t[{:.3f}, {:.3f}, {:.3f}, {:.3f}, {:.3f}]'.format(*theta))
+    #print('theta:')
+    #print('\t[{:.3f}, {:.3f}, {:.3f}, {:.3f}, {:.3f}]'.format(*theta))
 
     return theta, cost, grad
 

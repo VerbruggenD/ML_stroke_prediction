@@ -1,6 +1,12 @@
 Following steps: 
-	- rejecting outliers of the dataset (to improve the logistic regression)
+	- rejecting outliers of the dataset (to improve the logistic regression) 
+		-> check, too much data loss, resulted in a lower score
 	- selecting more features (only to increase f1, should be somewhat methodologic)
+		-> check, adding 3 more features gave a better score
 	- playing with the regularization and decision boundary params (in a for loop, all results of testing 		should be saved for the final paper)
+		-> check, only data gathering not done
+		- could be in a graph for decision boundary
 	- implementing SVM (also from the assignments, compare it to logistic regression)
+		-> check, SVM is very limited (also needs a lot more preprocessing)
 	- comparing results with models from SKLearn
+		-> check, these gave worse results then our models (decision boundary not self chosen)
